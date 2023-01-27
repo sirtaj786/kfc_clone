@@ -32,10 +32,11 @@ const Menu = () => {
     ToastExample();
   };
   useEffect(() => {
-    axios.get("http://localhost:8080/items").then(function (res) {
+    axios.get("https://kfc-ykp5.onrender.com/items").then(function (res) {
       setData(res.data);
     });
   }, []);
+  console.log("data",data)
 
   return (
     <div className={style.container}>

@@ -21,14 +21,15 @@ const Home = () => {
   const [card,setCard]=useState([])
   const navigate=useNavigate()
   useEffect(() => {
-    axios.get("http://localhost:8080/homedata").then(function(res){
+    axios.get("https://kfc-ykp5.onrender.com/homedata").then(function(res){
     setData(res.data)
       
     })
-  
+    
   }, [])
+  console.log("data",data)
   useEffect(()=>{
-    axios.get("http://localhost:8080/Dealcard").then(function(res1){
+    axios.get("https://kfc-ykp5.onrender.com/Dealcard").then(function(res1){
     setCard(res1.data)
   })
   },[])
@@ -236,7 +237,7 @@ const Home = () => {
         </div>
         <div className={style.dataParent}>
           {data.map((data) => (
-            <div onClick={handleclick}className={style.datachild}>
+            <div  key={data.image}onClick={handleclick}className={style.datachild}>
               <div style={{ width: "100%", height: "68%" }}>
                 <img
                   style={{
