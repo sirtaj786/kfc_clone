@@ -16,8 +16,7 @@ In the project directory, you can run:
 5. npm start
 6. To Visit App:
 **http://localhost:3000/**
-7. Make sure your `json-server` is running on port `8080`, `db.json` file is provided.
-8. **OTP for Sign in 1234**
+7. **OTP for Sign in 1234**
 
 ## My teammates are:
 
