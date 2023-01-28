@@ -160,4 +160,20 @@
 
    
   
-  
+  @media only screen and (min-width: 70px) and (max-width: 420px){
+    .cardcontainer{
+      width:74%;
+      margin:auto;
+      display:grid;
+      margin-top: 3%;
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: auto;
+      gap:20px;
+      margin-bottom: 3%;
+    }
+   
+    
+  }
+  @media only screen and (min-width: 421px) and (max-width: 780px){
+    
+  }
